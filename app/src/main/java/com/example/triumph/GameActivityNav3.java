@@ -70,6 +70,7 @@ public class GameActivityNav3 extends AppCompatActivity {
 
     private ImageView player1CardPlayed;
     private ImageView player2CardPlayed;
+    //sample branch comment
 
     private ImageView cardButtonA1;
     private ImageView cardButtonA2;
