@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cardback"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardback"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/gt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/topbar"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0e3421"
+                android:id="@+id/topbar2"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/typegame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Single game"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentLeft="true"
+                    app:srcCompat="@drawable/back1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@id/typegame"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    app:srcCompat="@drawable/back1" />
+
+
+                <ImageView
+                    android:id="@+id/triumph"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_title"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/spades" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mm"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/topbar2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/playerlayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_title1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/car2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/playeravatar2"
+                            android:layout_width="50dp"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/kingp" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/playername1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/car2"
+                        android:layout_centerInParent="true"
+                        android:text="Abdullah"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_below="@id/playername1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/border_title"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/player2score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:text="100" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mm"
+                android:layout_above="@+id/selcards"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/playerlayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/border_title1"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/car4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/playeravatar4"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/kingdd" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@id/playeravatar4"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/playerpass4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="70"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/playername2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/car4"
+                        android:layout_centerInParent="true"
+                        android:text="Abdullah"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/playedcards"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@id/playerlayout4"
+                    android:layout_toLeftOf="@id/playerlayout3"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/middle"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/emptycardback" />
+
+                    <ImageView
+                        android:id="@+id/player4cardplayed"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="invisible"
+                        android:layout_toRightOf="@id/player2cardplayed"
+                        app:srcCompat="@drawable/h7" />
+
+                    <ImageView
+                        android:id="@+id/player3cardplayed"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="invisible"
+                        android:layout_toLeftOf="@id/player2cardplayed"
+                        app:srcCompat="@drawable/h7" />
+
+                    <ImageView
+                        android:id="@+id/player2cardplayed"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_above="@id/middle"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/emptycardback" />
+
+                    <ImageView
+                        android:id="@+id/player1cardplayed"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/player2cardplayed"
+                        app:srcCompat="@drawable/emptycardback" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/playerlayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/border_title1"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/car3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/playeravatar3"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/kingdd" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@id/playeravatar3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/playerpass3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="70"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/playername3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/car3"
+                        android:layout_centerInParent="true"
+                        android:text="Abdullah"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selcards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/card1"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_margin="5dp"
+                        app:srcCompat="@drawable/h7" />
+
+                    <ImageView
+                        android:id="@+id/card2"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_toRightOf="@id/card1"
+                        android:layout_margin="5dp"
+                        app:srcCompat="@drawable/h7" />
+
+                    <ImageView
+                        android:id="@+id/card3"
+                        android:layout_width="@dimen/selectcardwidth"
+                        android:layout_height="@dimen/selectcardheight"
+                        android:layout_toRightOf="@id/card2"
+                        android:layout_margin="5dp"
+                        app:srcCompat="@drawable/h7" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#0e3421"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/cardoptions"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/back1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_title"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/player1score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/score1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

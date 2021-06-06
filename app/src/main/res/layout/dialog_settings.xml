@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_title1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:id="@+id/leveltxt"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/easylevel"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/mediumlevel"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/mediumlevel"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/hardlevel"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/hardlevel"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Hard" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sound"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/yessound"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/nosound"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/nosound"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="No" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animation"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/offanimation"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/slowanimation"
+            android:layout_height="wrap_content"
+            android:text="Off" />
+
+        <RadioButton
+            android:id="@+id/slowanimation"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/fastanimation"
+            android:text="Slow" />
+
+        <RadioButton
+            android:id="@+id/fastanimation"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Fast" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Theme"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281856193830",
+    "project_id": "triumph-4632b",
+    "storage_bucket": "triumph-4632b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281856193830:android:ab57366cb775f1c1ccbde7",
+        "android_client_info": {
+          "package_name": "com.example.triumph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281856193830-s0k7ovecfel0jr07v8rn00v5bvqsamhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd9Gz055ZbPjys1LE_cdgdsS1vhPl3zt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281856193830-s0k7ovecfel0jr07v8rn00v5bvqsamhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

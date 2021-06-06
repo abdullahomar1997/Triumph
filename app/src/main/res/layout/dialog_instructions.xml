@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_title1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Instructions"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pass is card game that is played with a standard deck of playing cards with 2-4 players"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="The game begins with all all 52 cards being dealt out evenly to all Players "
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="" />
+
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="The first card played in a suite has to be 7 "
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="The players take a turn playing a cards that must follow suite and order (for example if the only card on a table is 7 spades the only card that can be played is an eight of spades , 6 of spades or another 7 of any suite) "
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="The player whose cards finish first wins "
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="" />
+
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Cards Sequence: A>K>Q>J>10>9>8>7>6>5>4>3>2 "
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

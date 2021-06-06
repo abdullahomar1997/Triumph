@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="selectedcardwidth">60dp</dimen>
+    <dimen name="cardwidth">60dp</dimen>
+    <dimen name="cardheight">26dp</dimen>
+    <dimen name="horizontalcardslayout">23dp</dimen>
+    <dimen name="selectcardwidth">60dp</dimen>
+    <dimen name="selectcardheight">95dp</dimen>
+    <dimen name="tablecardwidth">50dp</dimen>
+    <dimen name="playerscardwidth">85dp</dimen>
+    <dimen name="playerscardheight">85dp</dimen>
+    <dimen name="selectcardpadding">1dp</dimen>
+    <dimen name="pcnheight">30dp</dimen>
+    <dimen name="passandcardstextsize">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

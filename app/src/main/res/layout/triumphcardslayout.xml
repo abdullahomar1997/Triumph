@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/triumphcardslayout"
+    android:layout_width="wrap_content"
+    android:background="@drawable/border_numplayer"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Select Triumph Card"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/spades"
+                android:layout_width="@dimen/playerscardwidth"
+                android:layout_height="@dimen/playerscardheight"
+                android:background="@drawable/border_title"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/spades"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/hearts"
+                android:layout_width="@dimen/playerscardwidth"
+                android:layout_height="@dimen/playerscardheight"
+                android:padding="10dp"
+                android:background="@drawable/border_title"
+                app:srcCompat="@drawable/hearts" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/flowers"
+                android:layout_width="@dimen/playerscardwidth"
+                android:layout_height="@dimen/playerscardheight"
+                android:padding="10dp"
+                android:background="@drawable/border_title"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/flowers"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/diamonds"
+                android:layout_width="@dimen/playerscardwidth"
+                android:layout_height="@dimen/playerscardheight"
+                android:padding="10dp"
+                android:background="@drawable/border_title"
+                app:srcCompat="@drawable/diamonds" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

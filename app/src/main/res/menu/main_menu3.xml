@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_score"
+            android:icon="@drawable/score_foreground"
+            android:title="Statistics" />
+        <item
+            android:id="@+id/nav_instructions"
+            android:icon="@drawable/instructions_foreground"
+            android:title="Instructions" />
+    </group>
+
+
+    <item android:title="Settings">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_privacy_policy"
+                    android:icon="@drawable/policy_foreground"
+                    android:title="Privacy Policy" />
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/settings_foreground"
+                    android:title="Settings" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/menu_share_icon"
+                    android:title="share" />
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/rate_icon"
+                    android:title="rate_us" />
+                <item
+                    android:id="@+id/nav_support"
+                    android:icon="@drawable/rate_icon"
+                    android:title="Support" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/back1"
+            android:title="Exit" />
+
+    </group>
+
+</menu>
